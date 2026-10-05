@@ -1,0 +1,68 @@
+/* ============================================
+   BLOQUE: hero
+   ============================================ */
+
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Elemento: overlay decorativo */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.25) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.2) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.hero__container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-16) var(--space-6);
+  width: 100%;
+}
+
+.hero__content {
+  max-width: 640px;
+}
+
+.hero__title {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-6);
+}
+
+.hero__subtitle {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--space-8);
+  max-width: 520px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+/* Ajustes de botones dentro del hero (contexto oscuro) */
+.hero .btn--secondary {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.hero .btn--secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  color: #fff;
+}

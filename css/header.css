@@ -1,0 +1,120 @@
+/* ============================================
+   BLOQUE: header
+   ============================================ */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+
+/* Elemento: logo */
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 700;
+  font-size: var(--font-size-xl);
+  color: var(--color-secondary);
+}
+
+.header__logo-icon {
+  color: var(--color-primary);
+  font-size: 1.4em;
+}
+
+.header__logo-text {
+  letter-spacing: -0.02em;
+}
+
+/* Elemento: nav y menú */
+.header__nav {
+  display: none;
+}
+
+.header__menu {
+  display: flex;
+  gap: var(--space-8);
+}
+
+.header__link {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+  position: relative;
+}
+
+.header__link:hover,
+.header__link:focus {
+  color: var(--color-primary);
+}
+
+/* Estado activo del link (pseudo-elemento) */
+.header__link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width var(--transition);
+}
+
+.header__link:hover::after {
+  width: 100%;
+}
+
+/* Elemento: CTA del header */
+.header__cta {
+  display: none;
+}
+
+/* Elemento: burger (móvil) */
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+}
+
+.header__burger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  border-radius: 1px;
+  transition: transform var(--transition);
+}
+
+/* Responsive: desktop */
+@media (min-width: 768px) {
+  .header__nav {
+    display: block;
+  }
+
+  .header__cta {
+    display: inline-flex;
+  }
+
+  .header__burger {
+    display: none;
+  }
+}

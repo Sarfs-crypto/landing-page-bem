@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina — Productividad inteligente</title>
+  <meta name="description" content="Lumina es la plataforma de productividad que organiza tu trabajo, automatiza tareas y te ayuda a enfocarte en lo importante.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/testimonials.css">
+  <link rel="stylesheet" href="css/pricing.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <span class="header__logo-icon">✦</span>
+        <span class="header__logo-text">Lumina</span>
+      </a>
+
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="#features" class="header__link">Características</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#testimonials" class="header__link">Testimonios</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#pricing" class="header__link">Precios</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#contact" class="header__link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#pricing" class="header__cta btn btn--primary">Empezar gratis</a>
+
+      <button class="header__burger" aria-label="Abrir menú">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__container">
+      <div class="hero__content">
+        <h1 class="hero__title">Organiza tu trabajo.<br>Libera tu potencial.</h1>
+        <p class="hero__subtitle">Lumina centraliza tareas, automatiza procesos y te da claridad para enfocarte en lo que realmente importa.</p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--primary btn--lg">Probar gratis 14 días</a>
+          <a href="#features" class="btn btn--secondary btn--lg">Ver características</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES ========== -->
+  <section class="features" id="features">
+    <div class="features__container">
+      <header class="features__header">
+        <h2 class="features__title">Todo lo que necesitas en un solo lugar</h2>
+        <p class="features__subtitle">Diseñado para equipos y freelancers que quieren trabajar más inteligente, no más duro.</p>
+      </header>
+
+      <div class="features__grid">
+        <!-- Feature card normal -->
+        <article class="feature-card">
+          <div class="feature-card__icon feature-card__icon--blue">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <h3 class="feature-card__title">Tareas inteligentes</h3>
+          <p class="feature-card__description">Crea, asigna y prioriza tareas con IA que sugiere el mejor orden según plazos e importancia.</p>
+        </article>
+
+        <!-- Feature card destacada (modifier) -->
+        <article class="feature-card feature-card--highlighted">
+          <span class="feature-card__badge">Más popular</span>
+          <div class="feature-card__icon feature-card__icon--purple">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Automatizaciones</h3>
+          <p class="feature-card__description">Configura flujos que se ejecutan solos: recordatorios, notificaciones y reportes sin intervención manual.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon feature-card__icon--green">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="feature-card__title">Colaboración en tiempo real</h3>
+          <p class="feature-card__description">Comparte proyectos, comenta y edita junto a tu equipo. Todo sincronizado al instante.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <h3 class="feature-card__title">Reportes y analytics</h3>
+          <p class="feature-card__description">Visualiza el progreso de tu equipo con dashboards claros y métricas accionables.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__container">
+      <header class="testimonials__header">
+        <h2 class="testimonials__title">Lo que dicen nuestros usuarios</h2>
+        <p class="testimonials__subtitle">Miles de profesionales ya transformaron su forma de trabajar.</p>
+      </header>
+
+      <div class="testimonials__grid">
+        <!-- Testimonio normal -->
+        <article class="testimonial-card">
+          <div class="testimonial-card__quote">“Lumina nos ahorró más de 10 horas semanales en gestión de proyectos. La automatización es un game changer.”</div>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="https://i.pravatar.cc/80?img=12" alt="Avatar de Ana Ruiz">
+            <div class="testimonial-card__info">
+              <span class="testimonial-card__name">Ana Ruiz</span>
+              <span class="testimonial-card__role">Product Manager, TechFlow</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testimonio con modifier (destacado) -->
+        <article class="testimonial-card testimonial-card--featured">
+          <div class="testimonial-card__quote">“Pasamos de hojas de cálculo caóticas a un sistema limpio en menos de una semana. El onboarding es excelente.”</div>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="https://i.pravatar.cc/80?img=32" alt="Avatar de Carlos Méndez">
+            <div class="testimonial-card__info">
+              <span class="testimonial-card__name">Carlos Méndez</span>
+              <span class="testimonial-card__role">CEO, Studio Nova</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-card__quote">“La colaboración en tiempo real cambió cómo trabajamos con clientes. Todo queda documentado y accesible.”</div>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="https://i.pravatar.cc/80?img=47" alt="Avatar de Laura Gómez">
+            <div class="testimonial-card__info">
+              <span class="testimonial-card__name">Laura Gómez</span>
+              <span class="testimonial-card__role">Diseñadora freelance</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="pricing" id="pricing">
+    <div class="pricing__container">
+      <header class="pricing__header">
+        <h2 class="pricing__title">Planes simples y transparentes</h2>
+        <p class="pricing__subtitle">Elige el plan que mejor se adapte a tu equipo. Cancela cuando quieras.</p>
+      </header>
+
+      <div class="pricing__grid">
+        <!-- Plan Free -->
+        <article class="pricing-card">
+          <h3 class="pricing-card__name">Starter</h3>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">$0</span>
+            <span class="pricing-card__period">/mes</span>
+          </div>
+          <p class="pricing-card__description">Ideal para freelancers y proyectos personales.</p>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">Hasta 3 proyectos</li>
+            <li class="pricing-card__feature">5 GB de almacenamiento</li>
+            <li class="pricing-card__feature">Tareas básicas</li>
+            <li class="pricing-card__feature pricing-card__feature--disabled">Automatizaciones</li>
+            <li class="pricing-card__feature pricing-card__feature--disabled">Reportes avanzados</li>
+          </ul>
+          <a href="#contact" class="btn btn--secondary pricing-card__btn">Empezar gratis</a>
+        </article>
+
+        <!-- Plan destacado -->
+        <article class="pricing-card pricing-card--recommended">
+          <span class="pricing-card__badge">Recomendado</span>
+          <h3 class="pricing-card__name">Pro</h3>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">$19</span>
+            <span class="pricing-card__period">/mes</span>
+          </div>
+          <p class="pricing-card__description">Para equipos pequeños que necesitan más potencia.</p>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">Proyectos ilimitados</li>
+            <li class="pricing-card__feature">50 GB de almacenamiento</li>
+            <li class="pricing-card__feature">Automatizaciones</li>
+            <li class="pricing-card__feature">Colaboración en tiempo real</li>
+            <li class="pricing-card__feature">Reportes básicos</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary pricing-card__btn">Empezar prueba</a>
+        </article>
+
+        <!-- Plan Enterprise -->
+        <article class="pricing-card">
+          <h3 class="pricing-card__name">Business</h3>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">$49</span>
+            <span class="pricing-card__period">/mes</span>
+          </div>
+          <p class="pricing-card__description">Para empresas que requieren control total y soporte.</p>
+          <ul class="pricing-card__features">
+            <li class="pricing-card__feature">Todo de Pro</li>
+            <li class="pricing-card__feature">Almacenamiento ilimitado</li>
+            <li class="pricing-card__feature">SSO y permisos avanzados</li>
+            <li class="pricing-card__feature">Reportes avanzados + API</li>
+            <li class="pricing-card__feature">Soporte prioritario 24/7</li>
+          </ul>
+          <a href="#contact" class="btn btn--secondary pricing-card__btn">Contactar ventas</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="contact__container">
+      <header class="contact__header">
+        <h2 class="contact__title">¿Tienes preguntas?</h2>
+        <p class="contact__subtitle">Escríbenos y te respondemos en menos de 24 horas.</p>
+      </header>
+
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="contact-form__group">
+          <label class="contact-form__label" for="name">Nombre</label>
+          <input class="contact-form__input" type="text" id="name" name="name" placeholder="Tu nombre" required>
+          <span class="contact-form__error">Por favor, introduce tu nombre.</span>
+        </div>
+
+        <div class="contact-form__group">
+          <label class="contact-form__label" for="email">Email</label>
+          <input class="contact-form__input" type="email" id="email" name="email" placeholder="tu@email.com" required>
+          <span class="contact-form__error">Introduce un email válido.</span>
+        </div>
+
+        <div class="contact-form__group">
+          <label class="contact-form__label" for="message">Mensaje</label>
+          <textarea class="contact-form__textarea" id="message" name="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          <span class="contact-form__error">Escribe tu mensaje.</span>
+        </div>
+
+        <button type="submit" class="btn btn--primary contact-form__submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">
+            <span class="footer__logo-icon">✦</span>
+            <span class="footer__logo-text">Lumina</span>
+          </a>
+          <p class="footer__tagline">Productividad inteligente para equipos modernos.</p>
+        </div>
+
+        <div class="footer__links">
+          <div class="footer__column">
+            <h4 class="footer__column-title">Producto</h4>
+            <ul class="footer__list">
+              <li><a href="#features" class="footer__link">Características</a></li>
+              <li><a href="#pricing" class="footer__link">Precios</a></li>
+              <li><a href="#" class="footer__link">Integraciones</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Empresa</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Sobre nosotros</a></li>
+              <li><a href="#" class="footer__link">Blog</a></li>
+              <li><a href="#contact" class="footer__link">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Contacto</h4>
+            <ul class="footer__list">
+              <li class="footer__contact-item">hola@lumina.app</li>
+              <li class="footer__contact-item">+34 900 123 456</li>
+              <li class="footer__contact-item">Madrid, España</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Lumina. Todos los derechos reservados.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="footer__social-link" aria-label="GitHub">GH</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
