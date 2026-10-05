@@ -52,6 +52,4 @@ Consulta [DOCUMENTACION-BEM.md](./DOCUMENTACION-BEM.md) para el detalle completo
 
 [https://project-lumina-blond.vercel.app](https://project-lumina-blond.vercel.app)
 
-## 📄 Licencia
 
-Proyecto educativo — Actividad práctica BEM.
