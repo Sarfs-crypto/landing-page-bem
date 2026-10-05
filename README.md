@@ -2,9 +2,11 @@
 
 Landing page completa para el producto **Lumina** (plataforma de productividad), desarrollada aplicando **todos los conceptos de BEM** aprendidos.
 
-## 🚀 Demo
+## 🚀 Demo en vivo
 
-Abre `index.html` en el navegador o despliega en Vercel / Netlify / InfinityFree.
+**Producción:** [https://project-lumina-blond.vercel.app](https://project-lumina-blond.vercel.app)
+
+También puedes abrir `index.html` en el navegador de forma local.
 
 ## 📁 Estructura del proyecto
 
@@ -51,6 +53,8 @@ Consulta [DOCUMENTACION-BEM.md](./DOCUMENTACION-BEM.md) para el detalle completo
 ### Vercel
 1. Conecta el repositorio en [vercel.com](https://vercel.com)
 2. Deploy automático
+
+> **Deploy actual:** [https://project-lumina-blond.vercel.app](https://project-lumina-blond.vercel.app)
 
 ### Netlify
 1. Arrastra la carpeta o conecta el repo en [netlify.com](https://www.netlify.com)
